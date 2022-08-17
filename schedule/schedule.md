@@ -7,7 +7,7 @@ title: Biostat 216
 
 BIOSTAT 216 tentative schedule and handouts (expect frequent updates)
 
-Slack channel: <https://biostat-216-2022-fall.slack.com> (invitation link: <https://join.slack.com/t/ucla-7hk2613/shared_invite/zt-1eei7cag3-K8jmJ9mdlaIqKyhQUJc9_w>)
+Slack channel: <https://biostat-216-2022-fall.slack.com> (invitation link](https://join.slack.com/t/ucla-7hk2613/shared_invite/zt-1eei7cag3-K8jmJ9mdlaIqKyhQUJc9_w))
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.github.io/main)
 
