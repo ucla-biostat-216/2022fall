@@ -49,7 +49,8 @@ For example, if you understand the questions in this [previous homework](https:/
 
 ### Bruin Learn Site
 
-<TBD>
+Course announcements and homework assignments will be sent from Bruin Learn system:  
+<https://bruinlearn.ucla.edu/courses/139328>
 
 ### Course Materials
 
