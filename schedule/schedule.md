@@ -17,7 +17,7 @@ Slack channel: <https://biostat-216-2022-fall.slack.com> ([invitation link](http
 | 2 | 9/27 vectors (BV Ch 1,3,5) | 9/29 | HW1 |  
 | 3 | 10/4 matrices (BV Ch 6-10) | 10/6 | HW2 |  
 | 4 | 10/11 vector space | 10/13 rank | HW3 |  
-| 5 | 10/18 rmatrix inverses and linear equations (BV Ch 11) | 10/20 **midterm** | |  
+| 5 | 10/18 matrix inverses and linear equations (BV Ch 11) | 10/20 **midterm** | |  
 | 6 | 10/25 projection | 10/27 | HW4 |     
 | 7 | 11/1 review | 11/3 | HW5 |  
 | 8 | 11/8 orthogonal projection | 11/10 | HW6 |   
