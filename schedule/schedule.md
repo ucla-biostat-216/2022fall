@@ -9,13 +9,13 @@ BIOSTAT 216 tentative schedule and handouts (expect frequent updates)
 
 Slack channel: <https://biostat-216-2022-fall.slack.com> ([invitation link](https://join.slack.com/t/ucla-7hk2613/shared_invite/zt-1eei7cag3-K8jmJ9mdlaIqKyhQUJc9_w))
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.github.io/main)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main)
 
 | Week | Tuesday | Thursday | Homework |
 |:-----------|:------------|:------------|:------------|
-| 1 | | 9/22 course logistics, intro. \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.github.io/main?filepath=slides%2F01-intro%2F01-intro.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/01-intro/01-intro.html)\] |  
-| 2 | 9/27 vectors (BV Ch 1,3,5) \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.github.io/main?filepath=slides%2F02-vector%2F02-vector.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/02-vector/02-vector.html)\] | 9/29 | HW1 |  
-| 3 | 10/4 matrices (BV Ch 6-10) \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.github.io/main?filepath=slides%2F03-matrix%2F03-matrix.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/03-matrix/03-matrix.html)\] | 10/6 | HW2 |  
+| 1 | | 9/22 course logistics, intro. \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F01-intro%2F01-intro.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/01-intro/01-intro.html)\] |  
+| 2 | 9/27 vectors (BV Ch 1,3,5) \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F02-vector%2F02-vector.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/02-vector/02-vector.html)\] | 9/29 | HW1 |  
+| 3 | 10/4 matrices (BV Ch 6-10) \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F03-matrix%2F03-matrix.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/03-matrix/03-matrix.html)\] | 10/6 | HW2 |  
 | 4 | 10/11 vector space | 10/13 rank | HW3 |  
 | 5 | 10/18 matrix inverses and linear equations (BV Ch 11) | 10/20 **midterm** | |  
 | 6 | 10/25 projection | 10/27 | HW4 |     
