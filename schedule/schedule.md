@@ -24,4 +24,4 @@ Slack channel: <https://biostat-216-2022-fall.slack.com> ([invitation link](http
 | 9 | 11/15 determinant | 11/17 eigen-decomposition | HW7 |   
 | 10 | 11/22 positive (semi)definite matrix | 11/25 Thanksgiving (**no class**) | HW8 |  
 | 11 | 11/29 SVD | 12/1 multivariate calculus and optimization | |   
-| 12 | | 12/9 **final exam** 11:30pm-2:30pm | |   
+| 12 | | | 12/9 **final exam** 11:30pm-2:30pm |   

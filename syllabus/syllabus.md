@@ -11,20 +11,20 @@ title: Biostat 216
 
 Linear algebra, multivariate calculus, and their applications in real world problems such as optimization, clustering, image compression, compressed sensing, matrix completion, and neural network.
 
-### Some COVID-19 related campus policies
+### COVID-19 related campus policies
 
 Please follow the [UCLA COVID protocols](https://covid-19.ucla.edu/ucla-covid-protocols/).
 
 ### Lecture
 
-Tuesdays and Thursdays, 10am-11:50am @ CHS 61-235. 
+Tuesdays and Thursdays, 10am-11:50am @ CHS 61-269. 
 
 ### Instructor
 
 [Dr. Hua Zhou](http://hua-zhou.github.io/)  
 Office: CHS 21-254A  
 Email: <huazhou@ucla.edu>  
-Office hours: Tuesdays and Thursdays, 12pm-1pm @ CHS 21-254A.
+Office hours: Tuesdays 9am-10am and Thursdays 12pm-1pm @ CHS 21-254A.
 
 ### Teaching Assistant
 
