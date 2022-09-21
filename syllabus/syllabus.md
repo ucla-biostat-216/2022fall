@@ -37,7 +37,7 @@ This 4-unit course is designed for first year biostatistics MS and PhD students.
 
 See the [schedule](https://ucla-biostat-216.github.io/2022fall/schedule/schedule.html) page for a tentative list of topics.  
 
-If you are very familiar with material, you waive this course via blue-petition. Previous exams: [2021 midterm](https://ucla-biostat216-2021fall.github.io/hw/midterm/midterm.html), [2021 final](https://ucla-biostat216-2021fall.github.io/hw/final/final.html), [2019 take-home final](https://ucla-biostat216-2019fall.github.io/hw/hw5/hw5.html). 
+If you are very familiar with material, you can waive this course via blue-petition. Previous exams: [2021 midterm](https://ucla-biostat216-2021fall.github.io/hw/midterm/midterm.html), [2021 final](https://ucla-biostat216-2021fall.github.io/hw/final/final.html), [2019 take-home final](https://ucla-biostat216-2019fall.github.io/hw/hw5/hw5.html). 
 
 ### Prerequisite
 
