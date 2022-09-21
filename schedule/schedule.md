@@ -15,7 +15,7 @@ Slack channel: <https://biostat-216-2022-fall.slack.com> ([invitation link](http
 
 | Week | Tuesday | Thursday | Homework |
 |:-----------|:------------|:------------|:------------|
-| 1 | | [9/22](https://ucla-biostat-216.github.io/2022fall/biostat216fall2022/2021/09/22/week1.html) course logistics, intro. \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F01-intro%2F01-intro.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/01-intro/01-intro.html)\] | [HW1](https://ucla-biostat-216.github.io/2022fall/hw/hw1/hw1.html) |    
+| 1 | | [9/22](https://ucla-biostat-216.github.io/2022fall/biostat216fall2022/2022/09/22/week1.html) course logistics, intro. \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F01-intro%2F01-intro.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/01-intro/01-intro.html)\] | [HW1](https://ucla-biostat-216.github.io/2022fall/hw/hw1/hw1.html) |    
 | 2 | 9/27 vectors (BV Ch 1,3,5) \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F02-vector%2F02-vector.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/02-vector/02-vector.html)\] | 9/29 | |  
 | 3 | 10/4 matrices (BV Ch 6-10) \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F03-matrix%2F03-matrix.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/03-matrix/03-matrix.html)\] | 10/6 | HW2 |  
 | 4 | 10/11 vector space | 10/13 rank | HW3 |  
