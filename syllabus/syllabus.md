@@ -33,9 +33,11 @@ Office hours: Wednesdays and Fridays, 2pm-3pm @ TBD.
 
 ### Course Description
 
-This 4-unit course is designed for first year biostatistics MS and PhD students. It will review, and in some cases introduce, specialized topics in Linear Algebra, Multivariate Calculus and Scientific Computing that are considered to be particularly pertinent for the subsequent courses in our MS and PhD curriculum. It is required for MS students and optional for PhD students.
+This 4-unit course is designed for first year biostatistics MS and PhD students. It will review, and in some cases introduce, specialized topics in Linear Algebra, Multivariate Calculus and Scientific Computing that are considered to be particularly pertinent for the subsequent courses in our MS and PhD curriculum. It is required for biostatistics MS students and PhD students.
 
 See the [schedule](https://ucla-biostat-216.github.io/2022fall/schedule/schedule.html) page for a tentative list of topics.  
+
+If you are very familiar with material, you waive this course via blue-petition. Previous exams: [2021 midterm](https://ucla-biostat216-2021fall.github.io/hw/midterm/midterm.html), [2021 final](https://ucla-biostat216-2021fall.github.io/hw/final/final.html), [2019 take-home final](https://ucla-biostat216-2019fall.github.io/hw/hw5/hw5.html). 
 
 ### Prerequisite
 
