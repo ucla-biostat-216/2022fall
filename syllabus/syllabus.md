@@ -37,14 +37,11 @@ This 4-unit course is designed for first year biostatistics MS and PhD students.
 
 See the [schedule](https://ucla-biostat-216.github.io/2022fall/schedule/schedule.html) page for a tentative list of topics.  
 
-If you are very familiar with material, you can waive this course via blue-petition. Previous exams: [2021 midterm](https://ucla-biostat216-2021fall.github.io/hw/midterm/midterm.html), [2021 final](https://ucla-biostat216-2021fall.github.io/hw/final/final.html), [2019 take-home final](https://ucla-biostat216-2019fall.github.io/hw/hw5/hw5.html). 
-
 ### Prerequisite
 
-Prerequisites are the same as those for admission into biostatistics MS program. Students should have seen one course in basic linear algebra at the level of UCLA’s Math 33A (using a textbook such as O. Bretscher, Linear Algebra, 5th Ed., Prentice Hall.) and a Calculus sequence at the level of UCLA’s Math 31AB (e.g. J. Rogawski, Calculus, 3rd Edition , W.H. Freeman & Co). Biostatistics MPH students will need to obtain consent from the instructor to take this course. Students with more advanced mathematical preparation prior to admission may not need to take this course and should consult with their academic advisers.
+Prerequisites are the same as those for admission into biostatistics MS program. Students should have seen one course in basic linear algebra at the level of UCLA’s Math 33A (using a textbook such as O. Bretscher, Linear Algebra, 5th Ed., Prentice Hall.) and a Calculus sequence at the level of UCLA’s Math 31AB (e.g. J. Rogawski, Calculus, 3rd Edition , W.H. Freeman & Co). Biostatistics MPH students will need to obtain consent from the instructor to take this course. Students with more advanced mathematical preparation prior to admission may not need to take this course and should consult with Professor Hua Zhou and their academic advisers.
 
-For example, if you understand the questions in this [previous homework](https://ucla-biostat216-2019fall.github.io/hw/hw5/hw5.html) and either know how to solve them or know where to find solutions, then this course is too easy for you. 
-
+For example, if you are comfortable answering the questions in  [2021 final](https://ucla-biostat216-2021fall.github.io/hw/final/final.html) and [2019 take-home final](https://ucla-biostat216-2019fall.github.io/hw/hw5/hw5.html), then this course is too easy for you. 
 ### Course Webpage
 
 <https://ucla-biostat-216.github.io/2022fall>
