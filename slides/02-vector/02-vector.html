@@ -13129,6 +13129,21 @@ $( document ).ready(function(){
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre><span class="ansi-green-intense-fg ansi-bold">  Activating</span> project at `~/Documents/github.com/ucla-biostat-216/2022fall/slides/02-vector`
+<span class="ansi-green-intense-fg ansi-bold">    Updating</span> registry at `~/.julia/registries/General`
+<span class="ansi-green-intense-fg ansi-bold">    Updating</span> git-repo `https://github.com/JuliaRegistries/General.git`
+<span class="ansi-green-intense-fg ansi-bold">  No Changes</span> to `~/Documents/github.com/ucla-biostat-216/2022fall/slides/02-vector/Project.toml`
+<span class="ansi-green-intense-fg ansi-bold">    Updating</span> `~/Documents/github.com/ucla-biostat-216/2022fall/slides/02-vector/Manifest.toml`
+ <span class="ansi-black-intense-fg"> [56f22d72] </span><span class="ansi-green-intense-fg">+ Artifacts</span>
+ <span class="ansi-black-intense-fg"> [8f399da3] </span><span class="ansi-green-intense-fg">+ Libdl</span>
+ <span class="ansi-black-intense-fg"> [37e2e46d] </span><span class="ansi-green-intense-fg">+ LinearAlgebra</span>
+ <span class="ansi-black-intense-fg"> [9a3f8284] </span><span class="ansi-green-intense-fg">+ Random</span>
+ <span class="ansi-black-intense-fg"> [ea8e919c] </span><span class="ansi-green-intense-fg">+ SHA v0.7.0</span>
+ <span class="ansi-black-intense-fg"> [9e88b42a] </span><span class="ansi-green-intense-fg">+ Serialization</span>
+ <span class="ansi-black-intense-fg"> [2f01184e] </span><span class="ansi-green-intense-fg">+ SparseArrays</span>
+ <span class="ansi-black-intense-fg"> [10745b16] </span><span class="ansi-green-intense-fg">+ Statistics</span>
+ <span class="ansi-black-intense-fg"> [e66e0078] </span><span class="ansi-green-intense-fg">+ CompilerSupportLibraries_jll v0.5.2+0</span>
+ <span class="ansi-black-intense-fg"> [4536629a] </span><span class="ansi-green-intense-fg">+ OpenBLAS_jll v0.3.20+0</span>
+ <span class="ansi-black-intense-fg"> [8e850b90] </span><span class="ansi-green-intense-fg">+ libblastrampoline_jll v5.1.1+0</span>
 </pre>
 </div>
 </div>
@@ -13799,9 +13814,31 @@ is a sum of scalar-vector products. </li>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
+<li><p><strong>Vector transpose</strong>:
+$$
+\mathbf{x}' = \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix}' = (x_1 \, \ldots \, x_n).
+$$</p>
+<p>Properties:</p>
+<ol>
+<li><p>$(\mathbf{x}')' = \mathbf{x}$.</p>
+</li>
+<li><p>Transposition is a linear operator: $(\alpha \mathbf{x} + \beta \mathbf{y})' = \alpha \mathbf{x}' + \beta \mathbf{y}'$.</p>
+<p>Superscript $^t$ or $^T$ is also commonly used to denote transpose: $\mathbf{x}^t$, $\mathbf{x}^T$.</p>
+</li>
+</ol>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
 <li>The <strong>inner product</strong> or <strong>dot product</strong> between two vectors $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$ is
 $$
-\mathbf{x}' \mathbf{y} = x_1 y_1 + \cdots + x_n y_n.
+\mathbf{x}' \mathbf{y} = (x_1 \, \ldots \, x_n) \begin{pmatrix} y_1 \\ \vdots \\ y_n \end{pmatrix} = x_1 y_1 + \cdots + x_n y_n.
 $$
 Other notations for inner products: $\langle \mathbf{x}, \mathbf{y} \rangle$, $\sum_{i=1}^n x_i y_i$.</li>
 </ul>
@@ -13919,32 +13956,10 @@ Other notations for inner products: $\langle \mathbf{x}, \mathbf{y} \rangle$, $\
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><p><strong>Vector transpose</strong>:
-$$
-\mathbf{x}' = \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix}' = (x_1 \, \ldots \, x_n).
-$$</p>
-<p>Properties:</p>
-<ol>
-<li><p>$(\mathbf{x}')' = \mathbf{x}$.</p>
-</li>
-<li><p>Transposition is a linear operator: $(\alpha \mathbf{x} + \beta \mathbf{y})' = \alpha \mathbf{x}' + \beta \mathbf{y}'$.</p>
-</li>
-</ol>
-</li>
-</ul>
-<p>Superscript $^t$ or $^T$ is also commonly used to denote transpose: $\mathbf{x}^t$, $\mathbf{x}^T$.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Computational-complexity-of-vector-operations">Computational complexity of vector operations<a class="anchor-link" href="#Computational-complexity-of-vector-operations">&#182;</a></h2><ul>
 <li><p>One <strong>floating point operation</strong> (flop) is one basic arithmetic operation in $\mathbb{R}$ or $\mathbb{C}$: $+, -, *, /, \sqrt, ...$</p>
 </li>
-<li><p>The <strong>flop count</strong> of <strong>operation count</strong> is the total number of flops in an algorithm.</p>
+<li><p>The <strong>flop count</strong> or <strong>operation count</strong> is the total number of flops in an algorithm.</p>
 </li>
 <li><p>A (very) crude predictor of run time of the algorithm is 
 $$
@@ -13965,6 +13980,8 @@ $$</p>
 <ul>
 <li><p>Assume vectors are all of length $n$.</p>
 <ol>
+<li><p>Sum the elements of a vector: $n-1$ flops.</p>
+</li>
 <li><p>Vector addition and substraction: $n$ flops.</p>
 </li>
 <li><p>Scalar multiplication: $n$ flops.</p>
@@ -14027,12 +14044,29 @@ Environment:
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Intel Skylake CPUs can do 16 double-precision flops per CPU cylce. Then the theoretical throughput of a single core on my laptop is
+$$
+2.9 \times 10^9 \times 16 = 46.4 \times 10^9 \text{ flops/second} = 46.4 \text{ GFLOPS}
+$$
+in double precision. I estimate my computer takes about
+$$
+\frac{10^7 - 1}{46.4 \times 10^9} \approx 0.0002155 \text{ seconds}
+$$
+to sum a vector of length $n = 10^7$.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="o">^</span><span class="mi">7</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># the actual run time</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="o">^</span><span class="mi">7</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">randn</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 <span class="n">sum</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c"># compile</span>
 <span class="nd">@time</span> <span class="n">sum</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
@@ -14052,7 +14086,7 @@ Environment:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>  0.004169 seconds (1 allocation: 16 bytes)
+<pre>  0.004409 seconds (1 allocation: 16 bytes)
 </pre>
 </div>
 </div>
@@ -14088,7 +14122,7 @@ $$</p>
 </li>
 <li><p>Homogeneity: $\|\alpha \mathbf{x}\| = |\alpha| \|\mathbf{x}\|$ for any scalar $\alpha$ and vector $\mathbf{x}$.</p>
 </li>
-<li><p>Triangle inequality: $\|\mathbf{x} + \mathbf{y}\| \le \|\mathbf{x}\| + \|\mathbf{y}\|$ for any $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$. Proof: use Cauchy-Schwartz inequality.</p>
+<li><p>Triangle inequality: $\|\mathbf{x} + \mathbf{y}\| \le \|\mathbf{x}\| + \|\mathbf{y}\|$ for any $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$. Proof: use Cauchy-Schwartz inequality. TODO in class.</p>
 </li>
 <li><p><strong>Cauchy-Schwartz inequality</strong>: $|\mathbf{x}' \mathbf{y}| \le \|\mathbf{x}\| \|\mathbf{y}\|$ for any $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$. The equality holds when (1) $\mathbf{x} = \mathbf{0}$ or $\mathbf{y}=\mathbf{0}$ or (2) $\mathbf{x} \ne \mathbf{0}$, $\mathbf{y} \ne \mathbf{0}$, and $\mathbf{x} = \alpha \mathbf{y}$ for some $\alpha \ne 0$.</p>
 <p>Proof: The function $f(t) = \|\mathbf{x} - t \mathbf{y}\|_2^2 = \|\mathbf{x}\|_2^2 - 2t (\mathbf{x}' \mathbf{y}) + t^2\|\mathbf{y}\|_2^2$ is minimized at $t^\star =(\mathbf{x}'\mathbf{y}) / \|\mathbf{y}\|^2$ with minimal value $f(t^\star) = \|\mathbf{x}\|^2 - (\mathbf{x}'\mathbf{y})^2 / \|\mathbf{y}\|^2 \ge 0$.</p>
@@ -14368,6 +14402,16 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Linear-independence">Linear independence<a class="anchor-link" href="#Linear-independence">&#182;</a></h2><ul>
+<li><p>Example: Consider vectors in $\mathbb{R}^3$
+$$
+\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}, \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}.
+$$
+The fourth vector $\begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}$ is in some sense redundant because it can be expressed as a linear combination of the other 3 vectors
+$$
+\begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix} = 1 \cdot \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} + 2 \cdot \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} + 3 \cdot \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}.
+$$
+Similarly, each one of these 4 vectors can be expressed as the linear combination of the other 3. We say these four vectors are linearly dependent.</p>
+</li>
 <li><p>A set of vectors $\mathbf{a}_1, \ldots, \mathbf{a}_k \in \mathbb{R}^n$ are <strong>linearly dependent</strong> if there exist constants $\alpha_1, \ldots, \alpha_k$, which are not all zeros, such that 
 $$
 \alpha_1 \mathbf{a}_1 + \cdots + \alpha_k \mathbf{a}_k = \mathbf{0}.
@@ -14381,7 +14425,7 @@ They are <strong>linearly independent</strong> if they are not linearly dependen
 <p>Proof: TODO in class.</p>
 </li>
 <li><p><strong>Independence-dimension inequality</strong> or <strong>order-dimension inequality</strong>. If the vectors $\mathbf{a}_1, \ldots, \mathbf{a}_k \in \mathbb{R}^n$ are linearly independent, then $k \le n$.</p>
-<p>In words, a linearly independent set of vectors in $\mathbb{R}^n$ can have at most $n$ elements. Or any set of $n+1$ or more vectors in $\mathbb{R}^n$ is linearly dependent.</p>
+<p>In words, there can be at most $n$ linearly independent vectors in $\mathbb{R}^n$. Or any set of $n+1$ or more vectors in $\mathbb{R}^n$ must linearly dependent.</p>
 <p>Proof (optional): We show this by induction. Let $a_1, \ldots, a_k \in \mathbb{R}^1$ be linearly independent. We must have $a_1 \ne 0$. This means that every element $a_i$ of the collection can be expressed as a multiple of $a_i = (a_i / a_1) a_1$ of the first element $a_1$. This contradicts the linear independence thus $k$ must be 1.<br>
   Induction hypothesis: suppose $n \ge 2$ and the independence-dimension inequality holds for $k \le n$. We partition the vectors $\mathbf{a}_i \in \mathbb{R}^n$ as
 $$

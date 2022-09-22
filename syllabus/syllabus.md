@@ -61,7 +61,7 @@ Recommended books (not required):
 
 * Strang, _Linear Algebra and Learning From Data_, Wellesley, MA: Wellesley-Cambridge Press (2019), [UCLA library link](https://search.library.ucla.edu/permalink/01UCS_LAL/17p22dp/alma9912384821806531)  
 
-* Banerjee and Roy, _Linear Algebra And Matrix Analysis For Statistics_, 2nd Edition, CRC Press (2014), [UCLA library link](https://search.library.ucla.edu/permalink/01UCS_LAL/192ecse/cdi_safari_books_9781482248241)  
+* Banerjee and Roy, _Linear Algebra And Matrix Analysis For Statistics_, 2nd Edition, CRC Press (2014), [UCLA library link](https://search.library.ucla.edu/permalink/01UCS_LAL/17p22dp/alma9974434803606533)  
 
 * Magnus and Neudecker, _Matrix Differential Calculus With Applications in Statistics and Econometrics_, John Wiley & Sons, Inc. (2019), [UCLA library link](https://search.library.ucla.edu/permalink/01UCS_LAL/17p22dp/alma9914812790606531)  
 
