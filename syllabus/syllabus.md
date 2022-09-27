@@ -29,7 +29,7 @@ Office hours: Tuesdays 9am-10am and Thursdays 12pm-1pm @ CHS 21-254A.
 ### Teaching Assistant
 
 Kelsey Ishimoto: <kmishimoto@ucla.edu>  
-Office hours: Wednesdays and Fridays, 2pm-3pm @ 51-236D.
+Office hours: Wednesdays and Fridays, 2pm-3pm @ CHS 51-236D.
 
 ### Course Description
 
