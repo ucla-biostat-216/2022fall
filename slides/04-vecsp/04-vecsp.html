@@ -14831,7 +14831,10 @@ the only solution to $\mathbf{C} \mathbf{x} = \mathbf{0}_l$ is $\mathbf{0}_k$. I
 <ol>
 <li>the number of vectors in <em>any</em> basis of $\mathcal{S}$, <strong>or</strong> </li>
 <li>the maximmal number of linearly independent vectors in $\mathcal{S}$, <strong>or</strong></li>
-<li>the minimal number of vectors that span $\mathcal{S}$. </li>
+<li><p>the minimal number of vectors that span $\mathcal{S}$.</p>
+<p>To see the equivalence between 1 and 2. Let $M$ be maximmal number of linearly independent vectors in $\mathcal{S}$. If $\mathbf{a}_1, \ldots, \mathbf{a}_M \in \mathcal{S}$ are linearly independent, then they must span $\mathcal{S}$, otherwise we can add more linearly independent vector(s) to the collection, conflicting with $M$ is the maximmal number of linearly independent vectors in $\mathcal{S}$. Therefore $\mathbf{a}_1, \ldots, \mathbf{a}_M$ is a basis and $M = \text{dim}(\mathcal{S})$.</p>
+<p>To see the equivalence between 1 and 3. Let $m$ be the minimal number of vectors that span $\mathcal{S}$. Suppose $\mathbf{a}_1, \ldots, \mathbf{a}_m$ span $\mathcal{S}$ and linearly dependent. Then we can take out one or more $\mathbf{a}_i$ and the remaining vectors still span $\mathcal{S}$. Therefore $\mathbf{a}_1, \ldots, \mathbf{a}_m$ must be linearly independent and thus a basis. Therefore $m = \text{dim}(\mathcal{S})$.</p>
+</li>
 </ol>
 </li>
 <li><p><strong>Monotonicity of dimension</strong>. If $\mathcal{S}_1 \subseteq \mathcal{S}_2 \subseteq \mathbb{R}^n$ are two vector spaces of same order, then $\text{dim}(\mathcal{S}_1) \le \text{dim}(\mathcal{S}_2)$.</p>
