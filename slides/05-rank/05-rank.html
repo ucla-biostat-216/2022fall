@@ -14181,13 +14181,22 @@ be a basis of $\mathcal{C}(\mathbf{A})$. Then $\mathcal{C}(\mathbf{A}) \subseteq
 </li>
 <li><p>Is rank factorization unique? No. $\mathbf{A} = \mathbf{C} \mathbf{R} = (\mathbf{C} \mathbf{M}) (\mathbf{M}^{-1} \mathbf{R})$ for any non-singular matrix $\mathbf{M}^{r \times r}$.</p>
 </li>
-<li><p>Given a rank factorization $\mathbf{A} = \mathbf{C} \mathbf{R}$,
+<li><p>Suppose $\mathbf{A}$ has column rank $r &gt; 0$ and rank factorization $\mathbf{A} = \mathbf{C} \mathbf{R}$. Then
+\begin{eqnarray*}
+  &amp; &amp; \text{row rank of } \mathbf{A} \\
+  &amp;=&amp; \text{column rank of } \mathbf{A}' \\
+  &amp;=&amp; \text{column rank of } \mathbf{R}' \mathbf{C}' \\
+  &amp;\le&amp; \text{column rank of } \mathbf{R}' \quad \quad (\text{right matrix multiplication shrinks column space}) \\
+  &amp;\le&amp; r \\
+  &amp;=&amp; \text{column rank of } \mathbf{A}.
+\end{eqnarray*}
+Now applying the above conclusion to matrix $\mathbf{A}'$, we have
 $$
-  \text{row rank of } \mathbf{A} = \text{rank}(\mathbf{A}') = \text{rank}(\mathbf{R}' \mathbf{C}') \le \text{rank}(\mathbf{R}') \le r = \text{rank}(\mathbf{A}) = \text{column rank of } \mathbf{A}.
+\text{row rank of } \mathbf{A}' \le \text{column rank of } \mathbf{A}',
 $$
-Now apply the same argument to rank factorization $\mathbf{A}' = \mathbf{R}' \mathbf{C}'$, we get the other direction
+i.e.,
 $$
-  \text{column rank of } \mathbf{A} \le \text{row rank of } \mathbf{A}.
+\text{column rank of } \mathbf{A} \le \text{row rank of } \mathbf{A}.
 $$
 Thus we have a proof of the famous result $\text{rank}(\mathbf{A}) = \text{rank}(\mathbf{A}')$.</p>
 </li>
