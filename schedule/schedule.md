@@ -21,9 +21,9 @@ Slack channel: <https://biostat-216-2022-fall.slack.com> ([invitation link](http
 | 4 | [10/11](https://ucla-biostat-216.github.io/2022fall/biostat216fall2022/2022/10/11/week4-day1.html) vector space \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F04-vecsp%2F04-vecsp.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/04-vecsp/04-vecsp.html)\] | [10/13](https://ucla-biostat-216.github.io/2022fall/biostat216fall2022/2022/10/13/week4-day2.html) rank \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F05-rank%2F05-rank.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/05-rank/05-rank.html)\] | [HW4](https://ucla-biostat-216.github.io/2022fall/hw/hw4/hw4.html) |  
 | 5 | [10/18](https://ucla-biostat-216.github.io/2022fall/biostat216fall2022/2022/10/18/week5-day1.html) matrix inverses and linear equations (BV Ch 11) \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F06-matinv%2F06-matinv.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/06-matinv/06-matinv.html)\] | 10/20 **midterm** | |  
 | 6 | 10/25 orthogonal projection \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F08-orthproj%2F08-orthproj.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/08-orthproj/08-orthproj.html)\] | 10/27 determinant \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F09-det%2F09-det.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/09-det/09-det.html)\] | HW5 |     
-| 7 | 11/1 | 11/3 | HW6 |  
+| 7 | 11/1 eigen-decomposition \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F10-eig%2F10-eig.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/10-eig/10-eig.html)\  | 11/3 | HW6 |  
 | 8 | 11/8 | 11/10 | HW7 |   
-| 9 | 11/15  | 11/17 eigen-decomposition | HW8 |   
+| 9 | 11/15  | 11/17 | HW8 |   
 | 10 | 11/22 positive (semi)definite matrix | 11/25 Thanksgiving (**no class**) | HW9 |  
 | 11 | 11/29 SVD | 12/1 multivariate calculus and optimization | HW10 |   
 | 12 | | | 12/9 Friday **final exam** 11:30pm-2:30pm |   
