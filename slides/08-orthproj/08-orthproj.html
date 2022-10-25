@@ -13137,7 +13137,7 @@ $$</p>
 $$
 \text{dim}(\mathcal{S}_1 + \mathcal{S}_2) \le \text{dim}(\mathcal{S}_1) + \text{dim}(\mathcal{S}_2).
 $$</p>
-<p>This is an immediate corollary of the preceding theorem. In HW4, try to give a self-contained proof without using the preceding theorem.</p>
+<p>This is an immediate corollary of the preceding theorem. In HW4, we give a self-contained proof without using the preceding theorem.</p>
 </li>
 <li><p><strong>Subadditivity of rank function.</strong> Let $\mathbf{A}$ and $\mathbf{B}$ be two matrices of the same order. Then<br>
 $$
@@ -13203,7 +13203,7 @@ $$
   \mathcal{X}^\perp = \{ \mathbf{u} \in \mathcal{V}: \langle \mathbf{x}, \mathbf{u} \rangle = 0 \text{ for all } \mathbf{x} \in \mathcal{X}\}.
 $$
 $\mathcal{X}^\perp$ is always a vector space regardless $\mathcal{X}$ is a vector space or not.</p>
-<p>Proof: exercise.</p>
+<p>Proof: midterm.</p>
 </li>
 <li><p>TODD: visualize $\mathbb{R}^3 = \text{a plane} \oplus \text{plan}^\perp$.</p>
 </li>
@@ -13295,83 +13295,76 @@ with equality holding only when $\mathbf{w} = \mathbf{u}$.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Orthogonal-projection-into-a-column-space">Orthogonal projection into a column space<a class="anchor-link" href="#Orthogonal-projection-into-a-column-space">&#182;</a></h2><ul>
-<li>For a matrix $\mathbf{X}$, the orthogonal projector onto $\mathcal{C}(\mathbf{X})$ is written as $\mathbf{P}_{\mathbf{X}}$.  </li>
-</ul>
-<p><img src="./ls_projection.png" width=400 align="center"/></p>
-<ul>
-<li><p>Let $\mathbf{y} \in \mathbb{R}^n$ and $\mathbf{X} \in \mathbb{R}^{n \times p}$.</p>
-<ol>
-<li>The orthogonal projector of $\mathbf{y}$ into $\mathcal{C}(\mathbf{X})$ is given by $\mathbf{u} = \mathbf{X} \boldsymbol{\beta}$, where $\boldsymbol{\beta}$ satisfies the <strong>normal equation</strong>
+<h2 id="Orthogonal-projector-into-a-column-space">Orthogonal projector into a column space<a class="anchor-link" href="#Orthogonal-projector-into-a-column-space">&#182;</a></h2><p>Let $\mathbf{X} = \begin{pmatrix} | &amp; &amp; | \\ \mathbf{x}_1 &amp; \dots &amp; \mathbf{x}_p \\ | &amp; &amp; | \end{pmatrix} \in \mathbb{R}^{n \times p}$. We construct the orthogonal projector $\mathbf{P}$ into $\mathcal{C}(\mathbf{X})$ using different ways.</p>
+<h3 id="Method-1">Method 1<a class="anchor-link" href="#Method-1">&#182;</a></h3><p>Let $\mathbf{q}_1, \ldots, \mathbf{q}_r$ be an orthonormal basis of $\mathcal{C}(\mathbf{X})$, e.g., by Gram-Schmidt with pivoting. Then 
 $$
-\mathbf{X}' \mathbf{X} \boldsymbol{\beta} = \mathbf{X}' \mathbf{y}.
+\mathbf{P} = \mathbf{Q} \mathbf{Q}', \text{where } \mathbf{Q} = \begin{pmatrix} | &amp; &amp; | \\ \mathbf{q}_1 &amp; \dots &amp; \mathbf{q}_r \\ | &amp; &amp; | \end{pmatrix},
+$$
+is the orthogonal projector $\mathbf{P}$ into $\mathcal{C}(\mathbf{X})$.</p>
+<p>Proof: For any $\mathbf{y} \in \mathbb{R}^n$, 
+$$
+\mathbf{P} \mathbf{y} = \mathbf{Q} \mathbf{Q}' \mathbf{y} \in \mathcal{C}(\mathbf{Q}) = \mathcal{C}(\mathbf{X}).
+$$ 
+And
+$$
+\mathbf{Q}' (\mathbf{y} - \mathbf{P} \mathbf{y}) = \mathbf{Q}' (\mathbf{y} - \mathbf{Q} \mathbf{Q}' \mathbf{y}) = \mathbf{Q}' \mathbf{y} - \mathbf{Q}' \mathbf{y} = \mathbf{0}_r
+$$
+thus $\mathbf{y} - \mathbf{P} \mathbf{y} \in \mathcal{N}(\mathbf{Q}') = \mathcal{C}(\mathbf{Q})^\perp = \mathcal{C}(\mathbf{X})^\perp$.</p>
+<h3 id="Method-2">Method 2<a class="anchor-link" href="#Method-2">&#182;</a></h3><p><img src="./ls_projection.png" width=400 align="center"/></p>
+<ol>
+<li><p>The orthogonal projector of $\mathbf{y}$ into $\mathcal{C}(\mathbf{X})$ is given by $\mathbf{u} = \mathbf{X} \boldsymbol{\beta}$, where $\boldsymbol{\beta}$ satisfies the <strong>normal equation</strong>
+$$
+ \mathbf{X}' \mathbf{X} \boldsymbol{\beta} = \mathbf{X}' \mathbf{y}.
 $$
 Normal equation always has solution(s) (why?) and any generalized inverse $(\mathbf{X}'\mathbf{X})^-$ yields a solution $\widehat{\boldsymbol{\beta}} = (\mathbf{X}'\mathbf{X})^- \mathbf{X}' \mathbf{y}$. Therefore,
 $$
 \mathbf{P}_{\mathbf{X}} = \mathbf{X} (\mathbf{X}' \mathbf{X})^- \mathbf{X}'.
 $$
-for any generalized inverse $(\mathbf{X}' \mathbf{X})^-$.</li>
+for any generalized inverse $(\mathbf{X}' \mathbf{X})^-$.</p>
+</li>
 <li><p>If $\mathbf{X}$ has full column rank, then the orthogonal projector into $\mathcal{C}(\mathbf{X})$ is given by
 $$
-\mathbf{P}_{\mathbf{X}} = \mathbf{X} (\mathbf{X}' \mathbf{X})^{-1} \mathbf{X}'.
+ \mathbf{P}_{\mathbf{X}} = \mathbf{X} (\mathbf{X}' \mathbf{X})^{-1} \mathbf{X}'.
 $$</p>
 <p>Proof of 1: Since the orthogonal projection of $\mathbf{y}$ into $\mathcal{C}(\mathbf{X})$ lives in $\mathcal{C}(\mathbf{X})$, thus can be written as $\mathbf{u} = \mathbf{X} \boldsymbol{\beta}$ for some $\boldsymbol{\beta} \in \mathbb{R}^p$. Furthermore, $\mathbf{v} = \mathbf{y} - \mathbf{X} \boldsymbol{\beta} \in \mathcal{C}(\mathbf{X})^\perp$ is orthogonal to any vectors in $\mathcal{C}(\mathbf{X})$ including the columns of $\mathbf{X}$. Thus
 $$
-\mathbf{X}' (\mathbf{y} - \mathbf{X} \boldsymbol{\beta}) = \mathbf{0},
+ \mathbf{X}' (\mathbf{y} - \mathbf{X} \boldsymbol{\beta}) = \mathbf{0},
 $$
 or equivalently,
 $$
-\mathbf{X}' \mathbf{X} \boldsymbol{\beta} = \mathbf{X}' \mathbf{y}.
+ \mathbf{X}' \mathbf{X} \boldsymbol{\beta} = \mathbf{X}' \mathbf{y}.
 $$</p>
 <p>Proof of 2: If $\mathbf{X}$ has full column rank, $\mathbf{X}' \mathbf{X}$ is non-singular and the solution to the normal equation is uniquely determined by $\boldsymbol{\beta} = (\mathbf{X}' \mathbf{X})^{-1} \mathbf{X}' \mathbf{y}$, and the orthogonal projection is $\mathbf{u} = \mathbf{X} \boldsymbol{\beta} = \mathbf{X} (\mathbf{X}' \mathbf{X})^{-1} \mathbf{X}' \mathbf{y}$.</p>
 </li>
 </ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Uniqueness-of-orthogonal-projector">Uniqueness of orthogonal projector<a class="anchor-link" href="#Uniqueness-of-orthogonal-projector">&#182;</a></h2><p>We have multiple ways to construct an orthogonal projector into $\mathcal{C}(\mathbf{X})$. This leaves the natural question: are orthogonal projectors into the same vector space unique? The answer is a happy yes.</p>
+<ul>
+<li><p>Theorem: Let $\mathbf{P}_{1}$ and $\mathbf{P}_2$ be two orthogonal projectors into a vector space $\mathcal{S}$. Then $\mathbf{P}_{1}=\mathbf{P}_2$.</p>
+<p>Proof: By the uniqueness of the decomposition of direct sums, $\mathbf{P}_2 \mathbf{e}_i$ = $\mathbf{P}_2 \mathbf{e}_i$ for all $i$. Thus $\mathbf{P}_{1}=\mathbf{P}_2$.</p>
 </li>
-<li><p><strong>Uniqueness of orthogonal projector.</strong> Let $\mathbf{A}, \mathbf{B} \in \mathbb{R}^{n \times p}$, both of full column rank and $\mathcal{C}(\mathbf{A}) = \mathcal{C}(\mathbf{B})$. Then $\mathbf{P}_{\mathbf{A}} = \mathbf{P}_{\mathbf{B}}$.</p>
-<p>Proof: Since $\mathcal{C}(\mathbf{A}) = \mathcal{C}(\mathbf{B})$, there exists a non-singular $\mathbf{C} \in \mathbb{R}^{p \times p}$ such that $\mathbf{A} = \mathbf{B} \mathbf{C}$. Then
-\begin{eqnarray*}
-  \mathbf{P}_{\mathbf{A}} &amp;=&amp; \mathbf{A} (\mathbf{A}' \mathbf{A})^{-1} \mathbf{A}' \\
-  &amp;=&amp; \mathbf{B} \mathbf{C} (\mathbf{C}' \mathbf{B}' \mathbf{B} \mathbf{C})^{-1} \mathbf{C}' \mathbf{B}' \\
-  &amp;=&amp; \mathbf{B} \mathbf{C} \mathbf{C}^{-1} (\mathbf{B}' \mathbf{B})^{-1} (\mathbf{C}')^{-1} \mathbf{C}' \mathbf{B}' \\
-  &amp;=&amp;  \mathbf{B} (\mathbf{B}' \mathbf{B})^{-1} \mathbf{B}' \\
-  &amp;=&amp; \mathbf{P}_{\mathbf{B}}.
-\end{eqnarray*}</p>
-</li>
-<li><p>Let $\mathbf{P}_\mathbf{X}$ be the orthogonal projector into $\mathcal{C}(\mathbf{X})$, where $\mathbf{X} \in \mathbb{R}^{n \times p}$ has full column rank. Following statements are true.</p>
-<ol>
-<li>$\mathbf{P}_\mathbf{X}$ and $\mathbf{I} - \mathbf{P}_\mathbf{X}$ are both symmetric and idemponent. </li>
-<li>$\mathbf{P}_\mathbf{X} \mathbf{X} = \mathbf{X}$ and $(\mathbf{I} - \mathbf{P}_\mathbf{X}) \mathbf{X} = \mathbf{O}$.  </li>
-<li>$\mathcal{C}(\mathbf{X}) = \mathcal{C}(\mathbf{P}_\mathbf{X})$ and $\text{rank}(\mathbf{P}_\mathbf{X}) = \text{rank}(\mathbf{X}) = p$.  </li>
-<li>$\mathcal{C}(\mathbf{I} - \mathbf{P}_\mathbf{X}) = \mathcal{N}(\mathbf{X}') = \mathcal{C}(\mathbf{X})^\perp$.  </li>
-<li><p>$\mathbf{I} - \mathbf{P}_\mathbf{X}$ is the orthogonal projector into $\mathcal{N}(\mathbf{X}')$ (or $\mathcal{C}(\mathbf{X})^\perp)$.</p>
-<p>Proof of 1: Check directly using $\mathbf{P}_{\mathbf{X}} = \mathbf{X} (\mathbf{X}' \mathbf{X})^{-1} \mathbf{X}'$.</p>
-<p>Proof of 2: Check directly using $\mathbf{P}_{\mathbf{X}} = \mathbf{X} (\mathbf{X}' \mathbf{X})^{-1} \mathbf{X}'$.</p>
-<p>Proof of 3: Since $\mathbf{P}_{\mathbf{X}} = \mathbf{X} (\mathbf{X}' \mathbf{X})^{-1} \mathbf{X}'$, 
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Any-symmetric,-idempotent-matrix-is-an-orthogonal-projector">Any symmetric, idempotent matrix is an orthogonal projector<a class="anchor-link" href="#Any-symmetric,-idempotent-matrix-is-an-orthogonal-projector">&#182;</a></h2><p>By the construction of orthogonal projector $\mathbf{P} = \mathbf{Q} \mathbf{Q}'$, we see $\mathbf{P}$ is symmetric and <strong>idempotent</strong>
 $$
-\mathcal{C}(\mathbf{P}_\mathbf{X}) \subseteq \mathcal{C}(\mathbf{X}) = \mathcal{C}(\mathbf{P}_\mathbf{X} \mathbf{X}) \subseteq \mathcal{C}(\mathbf{P}_\mathbf{X}). 
-$$</p>
-<p>Proof of 4 (optional): The second equality is simply the fundamental theorem of linear algebra. For the first equality, first we show $\mathcal{C}(\mathbf{I} - \mathbf{P}_\mathbf{X}) \subseteq \mathcal{N}(\mathbf{X}')$:
-\begin{eqnarray*}
-&amp; &amp; \mathbf{u} \in \mathcal{C}(\mathbf{I} - \mathbf{P}_\mathbf{X}) \\
-&amp;\Rightarrow&amp; \mathbf{u} = (\mathbf{I} - \mathbf{P}_\mathbf{X}) \mathbf{v} \text{ for some } \mathbf{v} \\
-&amp;\Rightarrow&amp; \mathbf{X}' \mathbf{u} = [(\mathbf{I} - \mathbf{P}_\mathbf{X}) \mathbf{X}]' \mathbf{v} = \mathbf{O} \mathbf{v} = \mathbf{0} \\
-&amp;\Rightarrow&amp; \mathbf{u} \in \mathcal{N}(\mathbf{X}').
-\end{eqnarray*}
-To show the other direction $\mathcal{C}(\mathbf{I} - \mathbf{P}_\mathbf{X}) \supseteq \mathcal{N}(\mathbf{X}')$,
-\begin{eqnarray*}
-&amp; &amp; \mathbf{u} \in \mathcal{N}(\mathbf{X}') \\
-&amp;\Rightarrow&amp; \mathbf{X}' \mathbf{u} = \mathbf{0} \\
-&amp;\Rightarrow&amp; \mathbf{P}_\mathbf{X} \mathbf{u} = \mathbf{X} (\mathbf{X}' \mathbf{X})^{-1} \mathbf{X}' \mathbf{u} = \mathbf{0} \\
-&amp;\Rightarrow&amp; \mathbf{u} = \mathbf{u} - \mathbf{P}_\mathbf{X} \mathbf{u} = (\mathbf{I} - \mathbf{P}_\mathbf{X}) \mathbf{u} \\
-&amp;\Rightarrow&amp; \mathbf{u} \in \mathcal{C}(\mathbf{I} - \mathbf{P}_\mathbf{X}).
-\end{eqnarray*}</p>
-<p>Proof of 5: For any $\mathbf{y} \in \mathbb{R}^n$, write $\mathbf{y} = \mathbf{P}_\mathbf{X} \mathbf{y} + (\mathbf{I} - \mathbf{P}_\mathbf{X}) \mathbf{y}$.</p>
-</li>
-</ol>
-</li>
-<li><p>Let $\mathbf{P} \in \mathbb{R}^{n \times n}$ be symmetric with rank $r$ and $\mathbf{P} = \mathbf{U} \mathbf{U}'$ be a rank factorization of $\mathbf{P}$. Then $\mathbf{P}$ is an orthogonal projector in $\mathcal{C}(\mathbf{U})$ if and only if $\mathbf{U}' \mathbf{U} = \mathbf{I}_r$.</p>
-</li>
-<li><p>Above result gives another way to construct an orthogonal projector into $\mathcal{C}(\mathbf{A})$, where $\mathbf{A}$ might not be full column rank. Obtain an orthornormal basis $\mathbf{Q} \in \mathbb{R}^{n \times r}$ of $\mathcal{C}(\mathbf{A})$, e.g., by Gram-Schmidt, and let $\mathbf{P} = \mathbf{Q} \mathbf{Q}'$.</p>
+\mathbf{P} \mathbf{P} = \mathbf{Q} \mathbf{Q}' \mathbf{Q} \mathbf{Q}' = \mathbf{Q} \mathbf{Q}' = \mathbf{P}.
+$$
+It turns out the reverse is also true.</p>
+<ul>
+<li><p>Theorem: Any symmetric, idemponent matrix $\mathbf{P}$ is the orthogonal projector into $\mathcal{C}(\mathbf{P})$.</p>
+<p>Proof: For any $\mathbf{x} \in \mathbb{R}^n$, let $\mathbf{x} = \mathbf{v} + \mathbf{w}$, where $\mathbf{v} \in \mathcal{C}(\mathbf{P})$ and $\mathbf{w} \in \mathcal{C}(\mathbf{P})^\perp = \mathcal{N}(\mathbf{P}') = \mathcal{N}(\mathbf{P})$. Then $\mathbf{P}\mathbf{x} = \mathbf{P}\mathbf{v} + \mathbf{P}\mathbf{w} = \mathbf{v} + \mathbf{0} = \mathbf{v}$. Thus $\mathbf{P}$ is the orthogonal projector into $\mathcal{C}(\mathbf{P})$.</p>
 </li>
 </ul>
 
