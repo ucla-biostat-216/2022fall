@@ -13364,7 +13364,7 @@ $$
 It turns out the reverse is also true.</p>
 <ul>
 <li><p>Theorem: Any symmetric, idemponent matrix $\mathbf{P}$ is the orthogonal projector into $\mathcal{C}(\mathbf{P})$.</p>
-<p>Proof: For any $\mathbf{x} \in \mathbb{R}^n$, let $\mathbf{x} = \mathbf{v} + \mathbf{w}$, where $\mathbf{v} \in \mathcal{C}(\mathbf{P})$ and $\mathbf{w} \in \mathcal{C}(\mathbf{P})^\perp = \mathcal{N}(\mathbf{P}') = \mathcal{N}(\mathbf{P})$. Then $\mathbf{P}\mathbf{x} = \mathbf{P}\mathbf{v} + \mathbf{P}\mathbf{w} = \mathbf{v} + \mathbf{0} = \mathbf{v}$. Thus $\mathbf{P}$ is the orthogonal projector into $\mathcal{C}(\mathbf{P})$.</p>
+<p>Proof: For any $\mathbf{x} \in \mathbb{R}^n$, let $\mathbf{x} = \mathbf{v} + \mathbf{w}$, where $\mathbf{v} \in \mathcal{C}(\mathbf{P})$ and $\mathbf{w} \in \mathcal{C}(\mathbf{P})^\perp = \mathcal{N}(\mathbf{P}') = \mathcal{N}(\mathbf{P})$. Since $\mathbf{v} \in \mathcal{C}(\mathbf{P})$, $\mathbf{v} = \mathbf{P} \mathbf{u}$ for some $\mathbf{u} \in \mathbb{R}^n$. Then $\mathbf{P}\mathbf{x} = \mathbf{P} \mathbf{v} + \mathbf{P}\mathbf{w} = \mathbf{P} \mathbf{P} \mathbf{u} + \mathbf{P}\mathbf{w} = \mathbf{P} \mathbf{u} + \mathbf{P}\mathbf{w} = \mathbf{v} + \mathbf{0} = \mathbf{v}$. Thus $\mathbf{P}$ is the orthogonal projector into $\mathcal{C}(\mathbf{P})$. (Thanks Yuyuan for help!).</p>
 </li>
 </ul>
 
