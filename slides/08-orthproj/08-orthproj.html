@@ -13301,7 +13301,7 @@ $$
 \mathbf{P} = \mathbf{Q} \mathbf{Q}', \text{where } \mathbf{Q} = \begin{pmatrix} | &amp; &amp; | \\ \mathbf{q}_1 &amp; \dots &amp; \mathbf{q}_r \\ | &amp; &amp; | \end{pmatrix},
 $$
 is the orthogonal projector $\mathbf{P}$ into $\mathcal{C}(\mathbf{X})$.</p>
-<p>Proof: For any $\mathbf{y} \in \mathbb{R}^n$, 
+<p>Proof: For any $\mathbf{y} \in \mathbb{R}^n$, we show $\mathbf{y} = \mathbf{P} \mathbf{y} + (\mathbf{y} - \mathbf{P} \mathbf{y})$ such that $\mathbf{P} \mathbf{y} \in \mathcal{C}(\mathbf{X})$ and $\mathbf{y} - \mathbf{P} \mathbf{y} \in \mathcal{C}(\mathbf{X}^\perp = \mathcal{N}(\mathbf{X}')$. 
 $$
 \mathbf{P} \mathbf{y} = \mathbf{Q} \mathbf{Q}' \mathbf{y} \in \mathcal{C}(\mathbf{Q}) = \mathcal{C}(\mathbf{X}).
 $$ 
@@ -13347,7 +13347,7 @@ $$</p>
 <h2 id="Uniqueness-of-orthogonal-projector">Uniqueness of orthogonal projector<a class="anchor-link" href="#Uniqueness-of-orthogonal-projector">&#182;</a></h2><p>We have multiple ways to construct an orthogonal projector into $\mathcal{C}(\mathbf{X})$. This leaves the natural question: are orthogonal projectors into the same vector space unique? The answer is a happy yes.</p>
 <ul>
 <li><p>Theorem: Let $\mathbf{P}_{1}$ and $\mathbf{P}_2$ be two orthogonal projectors into a vector space $\mathcal{S}$. Then $\mathbf{P}_{1}=\mathbf{P}_2$.</p>
-<p>Proof: By the uniqueness of the decomposition of direct sums, $\mathbf{P}_2 \mathbf{e}_i$ = $\mathbf{P}_2 \mathbf{e}_i$ for all $i$. Thus $\mathbf{P}_{1}=\mathbf{P}_2$.</p>
+<p>Proof: By the uniqueness of the decomposition of direct sums, $\mathbf{P}_1 \mathbf{e}_i$ = $\mathbf{P}_2 \mathbf{e}_i$ for all $i$. Thus $\mathbf{P}_{1}=\mathbf{P}_2$.</p>
 </li>
 </ul>
 
