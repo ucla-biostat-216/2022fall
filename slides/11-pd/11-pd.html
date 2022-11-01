@@ -13208,7 +13208,7 @@ $$
 Since $\mathbf{Q}$ is orthogonal, $\mathbf{Q}' \mathbf{x} \ne \mathbf{0}$ (otherwise it conflicts with linear indepence between $\mathbf{q}_i$s). Therefore $\mathbf{x}' \mathbf{A} \mathbf{x} = \sum_{i=1}^n \lambda_i (\mathbf{q}_i' \mathbf{x})^2 &gt; 0$.</p>
 <p>Proof of the "if" part: Take $\mathbf{x} = \mathbf{q}_i$. Then $\mathbf{x}' \mathbf{A} \mathbf{x} = \lambda_i &gt; 0$.</p>
 </li>
-<li><p>HW6, Q6.</p>
+<li><p>Suppose $\mathbf{C}$ is positive definite and $\mathbf{A}$ has independent columns. Then $\mathbf{A}' \mathbf{C} \mathbf{A}$ is positive definite. (HW6)</p>
 </li>
 <li><p>If $\mathbf{A}_1$ and $\mathbf{A}_2$ are positive definite, then $\alpha_1 \mathbf{A}_1 + \alpha_2 \mathbf{A}_2$ is positive definite for any $\alpha_1, \alpha_2 &gt; 0$.</p>
 <p>If $\mathbf{A}_1$ and $\mathbf{A}_2$ are positive semidefinite, then $\alpha_1 \mathbf{A}_1 + \alpha_2 \mathbf{A}_2$ is positive semidefinite for any $\alpha_1, \alpha_2 \ge 0$.</p>
@@ -13244,7 +13244,7 @@ $$
 where the diagonal blocks $\mathbf{A}$ and $\mathbf{C}$ are symmetric. Then</p>
 <ol>
 <li>$\mathbf{X} \succ \mathbf{O}$ if and only if $\mathbf{A} \succ \mathbf{O}$ and $\mathbf{S} = \mathbf{C} - \mathbf{B}' \mathbf{A}^{-1} \mathbf{B} \succ \mathbf{O}$.  </li>
-<li><p>If $\mathbf{A} \succ \mathbf{O}$, then $\mathbf{X} \succeq \mathbf{O}$ if $\mathbf{S} \succeq \mathbf{O}$.</p>
+<li><p>If $\mathbf{A} \succ \mathbf{O}$, then $\mathbf{X} \succeq \mathbf{O}$ if $\mathbf{S} = \mathbf{C} - \mathbf{B}' \mathbf{A}^{-1} \mathbf{B} \succeq \mathbf{O}$.</p>
 <p>Note: the matrix $\mathbf{S} = \mathbf{C} - \mathbf{B}' \mathbf{A}^{-1} \mathbf{B}$ is called the <strong>Schur complement</strong> of the block $\mathbf{A}$ of $\mathbf{X}$.</p>
 </li>
 </ol>
@@ -13259,7 +13259,7 @@ where the diagonal blocks $\mathbf{A}$ and $\mathbf{C}$ are symmetric. Then</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Covariance-test-for-positive-definiteness-(optional)">Covariance test for positive definiteness (optional)<a class="anchor-link" href="#Covariance-test-for-positive-definiteness-(optional)">&#182;</a></h2><ul>
+<h2 id="Covariance-test-for-positive-semidefiniteness-(optional)">Covariance test for positive semidefiniteness (optional)<a class="anchor-link" href="#Covariance-test-for-positive-semidefiniteness-(optional)">&#182;</a></h2><ul>
 <li><p>This is a trick due to statistician <a href="https://www.jstor.org/stable/2322195?origin=crossref&amp;seq=1#metadata_info_tab_contents">Igram Olkin (1985)</a>.</p>
 </li>
 <li><p>A matrix $\mathbf{A} \in \mathbb{R}^{n \times n}$ is positive semidefinite if and only if $\mathbf{A} = \text{Cov}(\mathbf{X})$ for a random vector $\mathbf{X} \in \mathbb{R}^n$.</p>
