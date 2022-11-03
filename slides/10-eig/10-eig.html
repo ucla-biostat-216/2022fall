@@ -13690,6 +13690,10 @@ Thus $\mathbf{x}_1 \in \mathcal{C}(\mathbf{A} - \lambda_2 \mathbf{I})$ and $\mat
 </li>
 </ol>
 </li>
+<li><p>Note a symmetric matrix certainly can have complex eigenvectors. For example, if $\mathbf{x}$ is a real eigenvector of $\mathbf{A}$, then $\mathbf{A} (i \mathbf{x}) = i (\mathbf{A} \mathbf{x}) = \lambda (i \mathbf{x})$. That is $i \mathbf{x}$ is a complex eigenvector of $\mathbf{A}$ with same eigenvalue. The next result is more important, which says we always have <em>enough</em> real eigenvectors for a symmetric matrix.</p>
+</li>
+<li><p>For a symmetric matrix, the algebraic multiplicity of a distinct eigenvalue always equals its geometric multiplicity, i.e., AM=GM. See <a href="https://math.stackexchange.com/a/4402827/1114963">StackExhcange</a> for a self-contained proof (optional).</p>
+</li>
 <li><p>For an eigenvalue with multiplicity, we can choose its eigenvectors to be orthogonal to each other. Also we normalize each eigenvector to have unit L2 norm. Thus we obtain the extremely useful <strong>spectral decomposition of a symmetric matrix</strong>
 $$
   \mathbf{A} = \mathbf{Q} \boldsymbol{\Lambda} \mathbf{Q}' = \begin{pmatrix} \mid &amp; &amp; \mid \\ \mathbf{q}_1 &amp; \cdots &amp; \mathbf{q}_n \\ \mid &amp; &amp; \mid \end{pmatrix} \begin{pmatrix} \lambda_1 &amp; &amp; \\ &amp; \ddots &amp; \\ &amp; &amp; \lambda_n \end{pmatrix} \begin{pmatrix} - &amp; \mathbf{q}_1' &amp; - \\ &amp; \vdots &amp; \\ - &amp; \mathbf{q}_n' &amp; - \end{pmatrix} = \sum_{i=1}^n \lambda_i \mathbf{q}_i \mathbf{q}_i',

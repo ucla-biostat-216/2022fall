@@ -13244,10 +13244,10 @@ $$
 where the diagonal blocks $\mathbf{A}$ and $\mathbf{C}$ are symmetric. Then</p>
 <ol>
 <li>$\mathbf{X} \succ \mathbf{O}$ if and only if $\mathbf{A} \succ \mathbf{O}$ and $\mathbf{S} = \mathbf{C} - \mathbf{B}' \mathbf{A}^{-1} \mathbf{B} \succ \mathbf{O}$.  </li>
-<li><p>If $\mathbf{A} \succ \mathbf{O}$, then $\mathbf{X} \succeq \mathbf{O}$ if $\mathbf{S} = \mathbf{C} - \mathbf{B}' \mathbf{A}^{-1} \mathbf{B} \succeq \mathbf{O}$.</p>
-<p>Note: the matrix $\mathbf{S} = \mathbf{C} - \mathbf{B}' \mathbf{A}^{-1} \mathbf{B}$ is called the <strong>Schur complement</strong> of the block $\mathbf{A}$ of $\mathbf{X}$.</p>
-</li>
+<li>If $\mathbf{A} \succ \mathbf{O}$, then $\mathbf{X} \succeq \mathbf{O}$ if $\mathbf{S} = \mathbf{C} - \mathbf{B}' \mathbf{A}^{-1} \mathbf{B} \succeq \mathbf{O}$.</li>
 </ol>
+</li>
+<li><p>Note: the matrix $\mathbf{S} = \mathbf{C} - \mathbf{B}' \mathbf{A}^{-1} \mathbf{B}$ is called the <strong>Schur complement</strong> of the block $\mathbf{A}$ of $\mathbf{X}$.</p>
 </li>
 <li><p>Example 4 above.</p>
 </li>
@@ -13260,7 +13260,7 @@ where the diagonal blocks $\mathbf{A}$ and $\mathbf{C}$ are symmetric. Then</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Covariance-test-for-positive-semidefiniteness-(optional)">Covariance test for positive semidefiniteness (optional)<a class="anchor-link" href="#Covariance-test-for-positive-semidefiniteness-(optional)">&#182;</a></h2><ul>
-<li><p>This is a trick due to statistician <a href="https://www.jstor.org/stable/2322195?origin=crossref&amp;seq=1#metadata_info_tab_contents">Igram Olkin (1985)</a>.</p>
+<li><p>This is a trick due to statistician <a href="https://doi.org/10.2307/2322195">Igram Olkin (1985)</a>.</p>
 </li>
 <li><p>A matrix $\mathbf{A} \in \mathbb{R}^{n \times n}$ is positive semidefinite if and only if $\mathbf{A} = \text{Cov}(\mathbf{X})$ for a random vector $\mathbf{X} \in \mathbb{R}^n$.</p>
 <p>Proof of the "if" part: We use the energy-based definition:
@@ -13271,7 +13271,7 @@ for any vector $\mathbf{a}$.</p>
 <p>Proof of the "only if" part: Let $\mathbf{Y} \sim \text{Normal}(\mathbf{0}, \mathbf{I}_n)$. Then $\mathbf{A} = \text{Cov}(\mathbf{A}^{1/2} \mathbf{Y})$.</p>
 </li>
 <li><p>Schur lemma: If $\mathbf{A}, \mathbf{B} \in \mathbb{R}^{n \times n}$ are positive semidefinite, then their Hadamard product (elementwise product) $\mathbf{A} \circ \mathbf{B} = (a_{ij} b_{ij})$ is positive semidefinite.</p>
-<p>Proof: Let $\mathbf{A} = \text{Cov}(\mathbf{X})$ and $\mathbf{B} = \text{Cov}(\mathbf{Y})$. Then $\mathbf{A} \circ \mathbf{B} = \text{Cov}(\mathbf{X} \circ \mathbf{Y})$.</p>
+<p>Proof: Let $\mathbf{A} = \text{Cov}(\mathbf{X})$, $\mathbf{B} = \text{Cov}(\mathbf{Y})$, and $\mathbf{X}$ and $\mathbf{Y}$ are indepenent. Then $\mathbb{E}(x_i y_i x_j y_j) = (\mathbb{E} x_i x_j) (\mathbb{E}y_i y_j) = a_{ij} b_{ij}$. That is $\mathbf{A} \circ \mathbf{B} = \text{Cov}(\mathbf{X} \circ \mathbf{Y})$, which is positive semidefinite.</p>
 </li>
 </ul>
 
@@ -13282,7 +13282,7 @@ for any vector $\mathbf{a}$.</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Cholesky-decomposition">Cholesky decomposition<a class="anchor-link" href="#Cholesky-decomposition">&#182;</a></h2><ul>
-<li><p>The Cholesky decomposition is a special case of LU decomposition for symmetric, positive definite matrix $\mathbf{A}$.</p>
+<li><p>The Cholesky decomposition can be thought as a special LU decomposition for symmetric, positive definite matrix $\mathbf{A}$.</p>
 </li>
 <li><p>Any positive definite matrix $\mathbf{A}$ admits the decomposition
 $$
@@ -13765,11 +13765,11 @@ $$
 $$
 We can test whether it is positive definite by</p>
 <ul>
-<li>eigenvalues: $\lambda_1 = 9$, $\lambda_2 = 1$.  </li>
+<li>eigenvalues: $\lambda_1 = 9$, $\lambda_2 = 1$, or  </li>
 <li>energy test: 
 $$
-(x, y) \begin{pmatrix} 5 &amp; 4 \\ 4 &amp; 5 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = 5x^2 + 8xy + 5y^2 = 9 \left( \frac{x + y}{\sqrt 2} \right)^2 + 1 \left( \frac{x-y}{\sqrt 2} \right)^2 &gt; 0.
-$$</li>
+(x, y) \begin{pmatrix} 5 &amp; 4 \\ 4 &amp; 5 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = 5x^2 + 8xy + 5y^2 = 9 \left( \frac{x + y}{\sqrt 2} \right)^2 + 1 \left( \frac{x-y}{\sqrt 2} \right)^2 &gt; 0,
+$$ or</li>
 <li>Schur complemennt: $a = 5 &gt; 0$, $c - a^{-1} b^2 = 5 - 16/5 &gt; 0$.</li>
 </ul>
 </li>

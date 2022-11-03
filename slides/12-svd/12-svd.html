@@ -13243,7 +13243,7 @@ $( document ).ready(function(){
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p>We saw in earlier lectures that a matrix can have complex eigenvalues and eigenvectors. Symmetric matrices have the nice property that all eigenvalues and eigenvectors are real. The singular value decomposition (SVD) generalizes the spectral decomposition to general rectangular matrices.</p>
+<li><p>We saw in earlier lectures that a square matrix can have complex eigenvalues and eigenvectors. Symmetric matrices have the nice property that all eigenvalues and eigenvectors are real. The singular value decomposition (SVD) generalizes the spectral decomposition to general rectangular matrices.</p>
 </li>
 <li><p>Applied mathematicians and statisticians call SVD the <a href="https://doi.org/10.1080/07468342.1996.11973744"><strong>singularly (most) valuable decomposition</strong></a>.</p>
 </li>
@@ -13259,7 +13259,7 @@ $$</p>
 </li>
 <li><p>Collecting above equations into matrix multiplication format:
 $$
-\mathbf{A} \begin{pmatrix} \mid &amp; &amp; \mid \\ \mathbf{v}_1 &amp; \cdots &amp; \mathbf{v}_n \\ \mid &amp; &amp; \mid \end{pmatrix} = \begin{pmatrix} \mid &amp; &amp; \mid \\ \mathbf{u}_1 &amp; \cdots &amp; \mathbf{u}_n \\ \mid &amp; &amp; \mid \end{pmatrix} \begin{pmatrix} \sigma_1 &amp; &amp; &amp; \\ &amp; \ddots &amp; &amp; \\ &amp; &amp; \sigma_r &amp; \\ &amp; &amp; &amp; \mathbf{O}_{n-r} \end{pmatrix},
+\mathbf{A} \begin{pmatrix} \mid &amp; &amp; \mid &amp; &amp; \mid \\ \mathbf{v}_1 &amp; \cdots &amp; \mathbf{v}_r &amp; \cdots &amp; \mathbf{v}_n \\ \mid &amp; &amp; \mid &amp; &amp; \mid \end{pmatrix} = \begin{pmatrix} \mid &amp; &amp; \mid &amp; &amp; \mid \\ \mathbf{u}_1 &amp; \cdots &amp; \mathbf{u}_r &amp; \cdots &amp; \mathbf{u}_n \\ \mid &amp; &amp; \mid &amp; &amp; \mid \end{pmatrix} \begin{pmatrix} \sigma_1 &amp; &amp; &amp; \\ &amp; \ddots &amp; &amp; \\ &amp; &amp; \sigma_r &amp; \\ &amp; &amp; &amp; \mathbf{O}_{n-r} \end{pmatrix},
 $$
 or
 $$
