@@ -13087,7 +13087,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="SVD">SVD<a class="anchor-link" href="#SVD">&#182;</a></h2><ul>
-<li>Q1. Find the closest rank-1 approximation (Frobenius norm or spectral norm) to these matrices
+<li>Q1. Find the closest rank-1 approximation (in Frobenius norm or spectral norm) to these matrices
 $$
 \mathbf{A} = \begin{pmatrix} 3 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}, \quad \mathbf{A} = \begin{pmatrix} 0 &amp; 3 \\ 2 &amp; 0 \end{pmatrix}, \quad \mathbf{A} = \begin{pmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{pmatrix}, \quad \mathbf{A} = \begin{pmatrix} \cos \theta &amp; - \sin \theta \\ \sin \theta &amp; \cos \theta \end{pmatrix}. 
 $$</li>
@@ -13132,7 +13132,7 @@ where $\boldsymbol{\Sigma}^+ = \text{diag}(\sigma_1^{-1}, \ldots, \sigma_r^{-1},
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Q4. Show that all three matrix norms ($\ell_1$, Frobenius, nuclear) are invariant under orthogonal transforms. That is
+<li>Q4. Show that all three matrix norms ($\ell_2$, Frobenius, nuclear) are invariant under orthogonal transforms. That is
 $$
 \|\mathbf{Q}_1 \mathbf{A} \mathbf{Q}_2'\| = \|\mathbf{A}\| \text{ for orthogonal } \mathbf{Q}_1 \text{ and } \mathbf{Q}_2.
 $$</li>
@@ -13163,7 +13163,7 @@ $$</li>
 <li>Entropy $x \log x$.  </li>
 <li>$\log (e^x + e^y)$.  </li>
 <li>$\ell_p$ norm $\|\mathbf{x}\|_p = (|x_1|^p + |x_2|^p)^{1/p}$, $p \ge 1$.  </li>
-<li>$\lambda_{\max}(\mathbf{S})$ as a function of the symmetric matrix $\mathbf{S}$. Hint: Q3.1 and Q5.2.  </li>
+<li>$\lambda_{\max}(\mathbf{S})$ as a function of the symmetric matrix $\mathbf{S}$. Hint: HW6 Q10.6 and Q5.2.</li>
 </ol>
 </li>
 </ul>
