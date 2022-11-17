@@ -15370,7 +15370,7 @@ $$</p>
 </li>
 <li><p><strong>Frobenius norm</strong>:
 $$
-\|\mathbf{A}\|_{\text{F}} = \sqrt{\sum_{i,j} a_{ij}^2} = \text{tr}(\mathbf{A}' \mathbf{A}) = \sqrt{\sigma_1^2 + \cdots + \sigma_r^2}.
+\|\mathbf{A}\|_{\text{F}} = \sqrt{\sum_{i,j} a_{ij}^2} = \sqrt{\text{tr}(\mathbf{A}' \mathbf{A})} = \sqrt{\sigma_1^2 + \cdots + \sigma_r^2}.
 $$</p>
 </li>
 <li><p><strong>Nuclear norm</strong>:
@@ -15685,7 +15685,7 @@ $$
 $$</p>
 <p>Proof: Let $\tilde{\mathbf{y}} \in \mathbb{R}^n$ hold corresponding entries in $\mathbf{y}$ and be zero elsewhere. Then
 $$
-\sigma_1 (\mathbf{B}) = \max_{\mathbf{y}} \frac{\|\mathbf{B} \mathbf{y}\|}{\|\mathbf{y}\|} = \max_{\tilde{\mathbf{y}}} \frac{\|\mathbf{A} \tilde{\mathbf{y}}\|}{\|\tilde{\mathbf{y}}\|} \le \max_{\mathbf{x}} \frac{\|\mathbf{A} \mathbf{x}\|}{\|\mathbf{x}\|} = \sigma_1 (\mathbf{A}).
+\sigma_1 (\mathbf{B}) = \max_{\mathbf{y}} \frac{\|\mathbf{B} \mathbf{y}\|}{\|\mathbf{y}\|} \le \max_{\tilde{\mathbf{y}}} \frac{\|\mathbf{A} \tilde{\mathbf{y}}\|}{\|\tilde{\mathbf{y}}\|} \le \max_{\mathbf{x}} \frac{\|\mathbf{A} \mathbf{x}\|}{\|\mathbf{x}\|} = \sigma_1 (\mathbf{A}).
 $$</p>
 </li>
 </ul>
