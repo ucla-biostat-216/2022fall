@@ -24,6 +24,6 @@ Slack channel: <https://biostat-216-2022-fall.slack.com> ([invitation link](http
 | 7 | 11/1 eigen-decomposition \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F10-eig%2F10-eig.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/10-eig/10-eig.html)\]  | [11/3](https://ucla-biostat-216.github.io/2022fall/biostat216fall2022/2022/11/03/week7-day2.html) positive (semi)definite matrix \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F11-pd%2F11-pd.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/11-pd/11-pd.html)\] | [HW6](https://ucla-biostat-216.github.io/2022fall/hw/hw6/hw6.html) |  
 | 8 | 11/8 SVD \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F12-svd%2F12-svd.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/12-svd/12-svd.html)\] | 11/10 | [HW7](https://ucla-biostat-216.github.io/2022fall/hw/hw7/hw7.html) |   
 | 9 | 11/15 multivariate calculus and optimization \[slides: [Binder](https://mybinder.org/v2/gh/ucla-biostat-216/2022fall.git/main?filepath=slides%2F13-optim%2F13-optim.ipynb), [html](https://ucla-biostat-216.github.io/2022fall/slides/13-optim/13-optim.html)\] | 11/17 | [HW8](https://ucla-biostat-216.github.io/2022fall/hw/hw8/hw8.html) |   
-| 10 | 11/22  | 11/25 Thanksgiving (**no class**) | HW9???  |  
+| 10 | 11/22  | 11/25 Thanksgiving (**no class**) |  |  
 | 11 | 11/29  | 12/1 |  |   
 | 12 | | | 12/9 Friday **final exam** 11:30pm-2:30pm |   

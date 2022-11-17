@@ -13077,7 +13077,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Biostat-216-Homework-8">Biostat 216 Homework 8<a class="anchor-link" href="#Biostat-216-Homework-8">&#182;</a></h1><p><strong>Due Nov 26 Friday @ 11:59pm</strong></p>
+<h1 id="Biostat-216-Homework-8">Biostat 216 Homework 8<a class="anchor-link" href="#Biostat-216-Homework-8">&#182;</a></h1><p><strong>Due Nov 29 Friday @ 11:59pm</strong></p>
 <p>Submit a PDF (scanned/photographed from handwritten solutions, or converted from RMarkdown or Jupyter Notebook) to Gracescope on BruinLearn.</p>
 
 </div>
@@ -13109,7 +13109,7 @@ That is to show that $\widehat{\boldsymbol{\mu}}, \widehat{\boldsymbol{\Omega}}$
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li><p>Q2. (<strong>Smallest matrix subject to linear constraints</strong>) Find the matrix $\mathbf{X}$ with the smallest Frobenius norm subject to the constraint $\mathbf{X} \mathbf{U} = \mathbf{V}$, assuming $\mathbf{U}$ has full column rank.</p>
-<p>Hint: write down the optimization problem and use the method of Lagrange multipliers.</p>
+<p>Hint: Write down the optimization problem and use the method of Lagrange multipliers.</p>
 </li>
 </ul>
 
@@ -13139,7 +13139,7 @@ This result generalizes the fact that the top eigenvector of $\mathbf{A}$ maximi
 <ul>
 <li><p>Q4. (<a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.orthogonal_procrustes.html#scipy.linalg.orthogonal_procrustes"><strong>Procrustes rotation</strong></a>) The Procrustes problem studies how to properly align images. 
 <img src="./signature.png" alt="">
-<img src="./procrustes.jpg" alt="">
+<img src="./procrustes.jpg" alt=""><br>
 Let matrices $\mathbf{X}, \mathbf{Y} \in \mathbb{R}^{n \times p}$ record $n$ points on the two shapes. Mathematically we consider the problem
 \begin{eqnarray*}
 \text{minimize}_{\beta, \mathbf{O}, \mu} \quad \|\mathbf{X} - (\beta \mathbf{Y} \mathbf{O} + \mathbf{1}_n \mu^T)\|_{\text{F}}^2,
@@ -13192,7 +13192,7 @@ where $\mathbf{y}_{-k}$ and $\mathbf{X}_{-k}$ are the data with the $k$-th obser
 \begin{eqnarray*}
 C(\lambda) = \frac 1n \sum_{k=1}^n [y_k - \mathbf{x}_k^T \widehat{\boldsymbol{\beta}}_k(\lambda)]^2.
 \end{eqnarray*}
-However computing $n$ ridge solution paths $\widehat{\beta}_k(\lambda)$ is expensive. Show that, using SVD $\mathbf{X}=\mathbf{U} \Sigma \mathbf{V}^T$, 
+However computing $n$ ridge solutions $\widehat{\boldsymbol{\beta}}_k(\lambda)$ is expensive. Show that, using SVD $\mathbf{X}=\mathbf{U} \Sigma \mathbf{V}^T$, 
 \begin{eqnarray*}
 C(\lambda) = \frac 1n \sum_{k=1}^n \left[ \frac{y_k - \sum_{j=1}^r u_{kj} \tilde y_j \left( \frac{\sigma_j^2}{\sigma_j^2 + \lambda} \right)}{1 - \sum_{j=1}^r u_{kj}^2 \left( \frac{\sigma_j^2}{\sigma_j^2 + \lambda} \right)} \right]^2,
 \end{eqnarray*}
@@ -13220,11 +13220,11 @@ where $\mathbf{S} = n^{-1} \sum_{i=1}^n \mathbf{y}_i \mathbf{y}_i'$.</p>
 <li>Step 1: Take derivative with respect to $\mathbf{F}$ and set to 0 to obtain the first-order optimality condition.   </li>
 <li>Step 2: Reparameterize $\mathbf{H} = \mathbf{D}^{-1/2} \mathbf{F}$ and $\tilde{\mathbf{S}} = \mathbf{D}^{-1/2} \mathbf{S} \mathbf{D}^{-1/2}$, and express the first-order optimality condition in terms of $\mathbf{H}$ and $\tilde{\mathbf{S}}$. </li>
 <li>Step 3: Let $\mathbf{H} = \mathbf{U} \boldsymbol{\Sigma} \mathbf{V}'$ be its SVD. Show that columns of $\mathbf{U}$ must be $r$ eigenvectors of $\tilde{\mathbf{S}}$.  </li>
-<li>Step 4: Identify which $r$ eigenvectors of $\tilde{\mathbf{S}}$ to use in $\mathbf{U}$ and then the solution to $\mathbf{F}$. </li>
+<li>Step 4: Identify which $r$ eigenvectors of $\tilde{\mathbf{S}}$ to use in $\mathbf{U}$ and then derive the solution to $\mathbf{F}$. </li>
 </ul>
 </li>
 <li><p>Q5.2 Show that, for fixed $\mathbf{F}$, we can find the maximizer $\mathbf{D}$ explicitly. (Hint: first-order optimality condition.)</p>
-<p>Combining Q5.1 and Q5.2, a natural algorithm to for finding the MLE of factor analysis model is to alternately update $\mathbf{F}$ and $\mathbf{D}$ until convergence.</p>
+<p>Combining Q5.1 and Q5.2, a natural algorithm for finding the MLE of factor analysis model is to alternately update $\mathbf{F}$ and $\mathbf{D}$ until convergence.</p>
 </li>
 </ul>
 </li>
