@@ -17959,7 +17959,7 @@ M1404.54 1340.08 L1382.67 1354.97 L1420.54 1366.12 L1442.41 1350.37  Z
 <h2 id="Chain-rule-for-multivariate-calculus">Chain rule for multivariate calculus<a class="anchor-link" href="#Chain-rule-for-multivariate-calculus">&#182;</a></h2><ul>
 <li><p>Taking derivative and Hessian of functions with vector or matrix argument can be frustrating. The key is to adopt a consistent notation that enables chain rule. Familiarize yourself with the content of this <a href="https://ucla-biostat216-2019fall.github.io/slides/16-matrixcalc/16-matrixcalc.html">lecture</a>. It can be one of the most useful notes for your graduate study or even research projects.</p>
 </li>
-<li><p>Some notations such as Kronecker product and commutation matrix appear in this lecture note. Basic properties of these matrices are summarized in this <a href="https://ucla-biostat216-2019fall.github.io/slides/13-kron/13-kron.html">lecture note</a>.</p>
+<li><p>Some notations such as Kronecker product and commutation matrix appear in the above lecture note. Basic properties of these matrices are summarized in this <a href="https://ucla-biostat216-2019fall.github.io/slides/13-kron/13-kron.html">lecture note</a>.</p>
 </li>
 <li><p>We will practice use of these results in homework problems.</p>
 </li>
@@ -18046,7 +18046,7 @@ for all $\mathbf{x}, \mathbf{y}$ and $\alpha \in (0, 1)$.</p>
 <li><p>A <strong>strictly convex function</strong> satisifies above definition but replacing $\le$ by $&lt;$.</p>
 <p>$f$ is (strictly) <strong>concave</strong> if $-f$ is strictly convex.</p>
 </li>
-<li><p>Examples of convex functions: $f_1(x) = ax + b$, $f_2(x) = x^2$, $f_3(x) = \max(f_1(x), f_2(x))$, $f_4(\mathbf{A}) = - \log \det \mathbf{A}$ for positive definite $\mathbf{A}$, ...</p>
+<li><p>Examples of convex functions: $f_1(x) = ax + b$, $f_2(x) = x^2$, $f_3(x) = \max\{f_1(x), f_2(x)\}$, $f_4(\mathbf{x}) = \mathbf{x}' \mathbf{A} \mathbf{x}$ where $\mathbf{A}$ is positive semidefinite, $f_5(\mathbf{A}) = - \log \det \mathbf{A}$ for positive definite $\mathbf{A}$, ...</p>
 <p>It is extremely useful to maintain your own catalog of convex functions. In general, we need at least one quarter of course to train in recognizing convexity and convex optimization problems, e.g., UCLA EE236B.</p>
 </li>
 <li><p>(Alternative <strong>epigraph</strong> definition of convexity) A function $f$ is convex if and only if the set of points on and above the graph of $f$, i.e., the epigraph set $\text{epi} f = \{(\mathbf{x},y): f(\mathbf{x}) \le y\}$, is convex.</p>
@@ -18092,7 +18092,7 @@ $$</p>
 <li><p>(Second derivative test) A twice differentiable function is convex if $\nabla^2 f(\mathbf{x}) \succeq \mathbf{O}_{n \times n}$ at all $\mathbf{x}$. It is strictly convex if $\nabla^2 f(\mathbf{x}) \succ \mathbf{O}_{n \times n}$ at all $\mathbf{x}$.</p>
 </li>
 <li><p>For a convex function, any stationary point with $\nabla f(\mathbf{x}) = \mathbf{0}$ is a global minimum.</p>
-<p>Proof: Supporting hyperplan inequality.</p>
+<p>Proof: Supporting hyperplane inequality.</p>
 </li>
 </ul>
 
