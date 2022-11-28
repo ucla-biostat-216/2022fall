@@ -13077,7 +13077,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Biostat-216-Homework-8">Biostat 216 Homework 8<a class="anchor-link" href="#Biostat-216-Homework-8">&#182;</a></h1><p><strong>Due Nov 29 Friday @ 11:59pm</strong></p>
+<h1 id="Biostat-216-Homework-8">Biostat 216 Homework 8<a class="anchor-link" href="#Biostat-216-Homework-8">&#182;</a></h1><p><strong>Due <del>Nov 29</del> Dec 2 Friday @ 11:59pm</strong></p>
 <p>Submit a PDF (scanned/photographed from handwritten solutions, or converted from RMarkdown or Jupyter Notebook) to Gracescope on BruinLearn.</p>
 
 </div>
@@ -13196,7 +13196,7 @@ However computing $n$ ridge solutions $\widehat{\boldsymbol{\beta}}_k(\lambda)$ 
 \begin{eqnarray*}
 C(\lambda) = \frac 1n \sum_{k=1}^n \left[ \frac{y_k - \sum_{j=1}^r u_{kj} \tilde y_j \left( \frac{\sigma_j^2}{\sigma_j^2 + \lambda} \right)}{1 - \sum_{j=1}^r u_{kj}^2 \left( \frac{\sigma_j^2}{\sigma_j^2 + \lambda} \right)} \right]^2,
 \end{eqnarray*}
-where $\tilde{\mathbf{y}} = \mathbf{U}^T \mathbf{y}$.</p>
+where $\tilde{\mathbf{y}} = \mathbf{U}^T \mathbf{y}$. Therefore, in practice, we only need to do SVD of $\mathbf{X}$ and then find the optimal value $\lambda$ that minimizes the leave-one-out (LOO) cross-validation error.</p>
 </li>
 </ul>
 </li>
@@ -13215,7 +13215,7 @@ $$
 $$
 where $\mathbf{S} = n^{-1} \sum_{i=1}^n \mathbf{y}_i \mathbf{y}_i'$.</p>
 <ul>
-<li><p>Q5.1 We first show that, for fixed $\mathbf{D}$, we can find the maximizer $\mathbf{F}$ explicitly using SVD by the following steps.</p>
+<li><p>Q6.1 We first show that, for fixed $\mathbf{D}$, we can find the maximizer $\mathbf{F}$ explicitly using SVD by the following steps.</p>
 <ul>
 <li>Step 1: Take derivative with respect to $\mathbf{F}$ and set to 0 to obtain the first-order optimality condition.   </li>
 <li>Step 2: Reparameterize $\mathbf{H} = \mathbf{D}^{-1/2} \mathbf{F}$ and $\tilde{\mathbf{S}} = \mathbf{D}^{-1/2} \mathbf{S} \mathbf{D}^{-1/2}$, and express the first-order optimality condition in terms of $\mathbf{H}$ and $\tilde{\mathbf{S}}$. </li>
@@ -13223,8 +13223,8 @@ where $\mathbf{S} = n^{-1} \sum_{i=1}^n \mathbf{y}_i \mathbf{y}_i'$.</p>
 <li>Step 4: Identify which $r$ eigenvectors of $\tilde{\mathbf{S}}$ to use in $\mathbf{U}$ and then derive the solution to $\mathbf{F}$. </li>
 </ul>
 </li>
-<li><p>Q5.2 Show that, for fixed $\mathbf{F}$, we can find the maximizer $\mathbf{D}$ explicitly. (Hint: first-order optimality condition.)</p>
-<p>Combining Q5.1 and Q5.2, a natural algorithm for finding the MLE of factor analysis model is to alternately update $\mathbf{F}$ and $\mathbf{D}$ until convergence.</p>
+<li><p>Q6.2 Show that, for fixed $\mathbf{F}$, we can find the maximizer $\mathbf{D}$ explicitly. (Hint: first-order optimality condition.)</p>
+<p>Combining Q6.1 and Q6.2, a natural algorithm for finding the MLE of factor analysis model is to alternately update $\mathbf{F}$ and $\mathbf{D}$ until convergence.</p>
 </li>
 </ul>
 </li>
