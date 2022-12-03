@@ -30,5 +30,4 @@ Manifest.toml
 */.ipynb_checkpoints/*
 books/
 midterm/
-hw*sol.html
-hw*sol.ipynb
+hw*sol.*
